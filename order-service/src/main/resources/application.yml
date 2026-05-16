@@ -3,6 +3,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/orderdb
     username: postgres
     password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
   rabbitmq:
     host: localhost
     port: 5672
